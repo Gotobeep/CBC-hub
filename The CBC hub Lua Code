@@ -1,0 +1,170 @@
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+
+local win = DiscordLib:Window("CDC hub Beta 1.5")
+
+local serv = win:Server("Home", "")
+
+local btns = serv:Channel("Buttons")
+
+btns:Button(
+    "Vhub",
+    function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
+        DiscordLib:Notification("Notification", "VHub has Successfully been loaded", "Okay!")
+    end
+)
+
+
+
+btns:Button(
+    "Darkrai X Hub",
+    function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+        DiscordLib:Notification("Notification", "Darkrai X Hub Successfully been loaded", "Okay!")
+    end
+)
+
+
+
+
+
+btns:Button(
+    "Domain X",
+    function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+        DiscordLib:Notification("Notification", "Domain XSuccessfully been loaded", "Okay!")
+    end
+)
+
+
+
+btns:Seperator()
+local btns = serv:Channel("Others")
+
+
+
+btns:Button(
+    "British Hub",
+    function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/YourLocalNzi/Ye/main/BH%20v4%20Fix"))()
+        DiscordLib:Notification("Notification", "British Hub Successfully been loaded", "Okay!")
+    end
+)
+
+
+btns:Button(
+    "InfiniteYield",
+    function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        DiscordLib:Notification("Notification", "InfiniteYieldSuccessfully been loaded", "Okay!")
+    end
+)
+
+
+btns:Button(
+    "Keyboard v2",
+    function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/kC3dAMvt"))()
+        DiscordLib:Notification("Notification", "Keyboard v2 Successfully been loaded", "Okay!")
+    end
+)
+
+
+
+local tgls = serv:Channel("Toggles")
+tgls:Toggle(
+    "Auto-Farm",
+    false,
+    function(bool)
+        print(bool)
+    end
+)
+
+local sldrs = serv:Channel("Sliders")
+
+local sldr =
+    sldrs:Slider(
+    "Slide me!",
+    0,
+    1000,
+    400,
+    function(t)
+        print(t)
+    end
+)
+
+sldrs:Button(
+    "Change to 50",
+    function()
+        sldr:Change(50)
+    end
+)
+
+local drops = serv:Channel("Dropdowns")
+
+local drop =
+    drops:Dropdown(
+    "Pick me!",
+    {"Option 1", "Option 2", "Option 3", "Option 4", "Option 5"},
+    function(bool)
+        print(bool)
+    end
+)
+
+drops:Button(
+    "Clear",
+    function()
+        drop:Clear()
+    end
+)
+
+drops:Button(
+    "Add option",
+    function()
+        drop:Add("Option")
+    end
+)
+
+local clrs = serv:Channel("Colorpickers")
+
+clrs:Colorpicker(
+    "ESP Color",
+    Color3.fromRGB(255, 1, 1),
+    function(t)
+        print(t)
+    end
+)
+
+local textbs = serv:Channel("Textboxes")
+
+textbs:Textbox(
+    "Gun power",
+    "Type here!",
+    true,
+    function(t)
+        print(t)
+    end
+)
+
+local lbls = serv:Channel("Labels")
+
+lbls:Label("Credits to Dawids bc he made this UI lib pretty cool")
+
+local bnds = serv:Channel("Binds")
+
+bnds:Bind(
+    "RTX",
+    Enum.KeyCode.RightShift,
+    function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/7rrgE4XL'),true))()
+        print("Rtx By im Patrick")
+    end
+)
+
+Wait(6) game.StarterGui:SetCore("SendNotification", { Title = "Credits to gotobeep"; Text = "and Subscribe to his channel ;)"; Icon = ""; Duration = "7"; Button1 = "i did"; Button2 = "I DON'T WANNA" })
+
+
+serv:Channel("Dawids")
+
+win:Server("Main", "http://www.roblox.com/asset/?id=6031075938") 
